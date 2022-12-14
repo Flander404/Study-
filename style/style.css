@@ -2384,8 +2384,9 @@
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    padding-left: 160px;
+    padding-left: 270px;
 }
+
 .first-btn {
     width: 100%;
     margin-top: 10px;
@@ -2402,19 +2403,713 @@
     letter-spacing: 0.1em;
     color: #656464;
 }
-.first-inp input{
-    width: 70%;
+
+.first-inp input {
+    width: 60%;
     padding-top: 10px;
+    border: 1px solid #553900;
+    border-radius: 5px;
+    font-size: 1vw;
     padding-bottom: 10px;
     padding-left: 10px;
 }
-.first-btn button{
-    width: 30%;
-    padding-top: 5px;
-    padding-bottom: 5px;
+
+.first-btn button {
+    width: 25%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 1vw;
+    justify-content: space-around;
+    color: #FFF;
+    background: #454CE3;
+    box-shadow: 0px 10px 15px rgba(69, 76, 227, 0.3);
+    border-radius: 5px;
+    border: none;
+}
+
+@media(max-width:991px) {
+    .question {
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #E5E5E5;
+        flex-direction: column;
+    }
+
+    .question-inp {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    .question-burger {
+        width: 90%;
+
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #FFF;
+    }
+
+    .question-menu {
+        display: none;
+    }
+
+    .question-burger p {
+        font-size: 3vw;
+        letter-spacing: 0.15em;
+        color: #858585;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .question-menu p {
+        font-size: 2vw;
+        letter-spacing: 0.15em;
+        color: #858585;
+        margin-top: 10px;
+        margin-left: 115px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .question-menu.active {
+        width: 90%;
+
+        padding-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #FFF;
+    }
+
+    .center {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50px;
+        margin-top: 25px;
+    }
+
+    .center:before,
+    .center:after,
+    .center div {
+        background: #FFD15C;
+        content: "";
+        display: block;
+        height: 6px;
+        border-radius: 3px;
+        margin: 7px 0;
+        transition: 0.5s;
+    }
+
+    .center.active:before {
+        transform: translateY(12px) rotate(135deg);
+    }
+
+    .center.active:after {
+        transform: translateY(-12px) rotate(-135deg);
+    }
+
+    .center.active div {
+        transform: scale(0);
+    }
+
+    .question-img {
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    .first-img {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    .first-img p {
+        font-size: 5vw;
+        color: #FFD15C;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .first-inp {
+        width: 100%;
+        margin-top: 10px;
+        padding-bottom: 10px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        padding-left: 220px;
+    }
+
+    .first-btn {
+        width: 100%;
+        margin-top: 10px;
+        padding-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+
+    }
+
+    .first-inp p {
+        font-size: 2vw;
+        letter-spacing: 0.1em;
+        color: #656464;
+    }
+
+    .first-inp input {
+        width: 70%;
+        padding-top: 10px;
+        border: 1px solid #553900;
+        border-radius: 5px;
+        font-size: 2vw;
+        padding-bottom: 10px;
+        padding-left: 10px;
+    }
+
+    .first-btn button {
+        width: 25%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: flex;
+        align-items: center;
+        font-size: 2vw;
+        justify-content: space-around;
+        color: #FFF;
+        background: #454CE3;
+        box-shadow: 0px 10px 15px rgba(69, 76, 227, 0.3);
+        border-radius: 5px;
+        border: none;
+    }
+}
+
+@media(max-width:600px) {
+    .question {
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #E5E5E5;
+        flex-direction: column;
+    }
+
+    .question-inp {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    .question-burger {
+        width: 90%;
+
+        padding-top: 10px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #FFF;
+    }
+
+    .question-menu {
+        display: none;
+    }
+
+    .question-burger p {
+        font-size: 4vw;
+        letter-spacing: 0.15em;
+        color: #858585;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .question-menu p {
+        font-size: 3vw;
+        letter-spacing: 0.15em;
+        color: #858585;
+        margin-left: 65px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .question-menu.active {
+        width: 90%;
+
+        padding-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #FFF;
+    }
+
+    .center {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50px;
+        margin-top: 25px;
+    }
+
+    .center:before,
+    .center:after,
+    .center div {
+        background: #FFD15C;
+        content: "";
+        display: block;
+        height: 6px;
+        border-radius: 3px;
+        margin: 7px 0;
+        transition: 0.5s;
+    }
+
+    .center.active:before {
+        transform: translateY(12px) rotate(135deg);
+    }
+
+    .center.active:after {
+        transform: translateY(-12px) rotate(-135deg);
+    }
+
+    .center.active div {
+        transform: scale(0);
+    }
+
+    .question-img {
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    .first-img {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    .first-img p {
+        font-size: 6vw;
+        color: #FFD15C;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .first-inp {
+        width: 100%;
+        margin-top: 10px;
+        padding-bottom: 10px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        padding-left: 60px;
+    }
+
+    .first-btn {
+        width: 100%;
+        margin-top: 10px;
+        padding-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+
+    }
+
+    .first-inp p {
+        font-size: 2vw;
+        letter-spacing: 0.1em;
+        color: #656464;
+    }
+
+    .first-inp input {
+        width: 90%;
+        padding-top: 10px;
+        border: 1px solid #553900;
+        border-radius: 5px;
+        font-size: 2vw;
+        padding-bottom: 10px;
+        padding-left: 10px;
+    }
+
+    .first-btn button {
+        width: 25%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: flex;
+        align-items: center;
+        font-size: 2vw;
+        justify-content: space-around;
+        color: #FFF;
+        background: #454CE3;
+        box-shadow: 0px 10px 15px rgba(69, 76, 227, 0.3);
+        border-radius: 5px;
+        border: none;
+    }
+}
+
+@media(max-width:500px) {
+    .question {
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #E5E5E5;
+        flex-direction: column;
+    }
+
+    .question-inp {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    .question-burger {
+        width: 90%;
+
+        padding-top: 10px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #FFF;
+    }
+
+    .question-menu {
+        display: none;
+    }
+
+    .question-burger p {
+        font-size: 5vw;
+        letter-spacing: 0.15em;
+        color: #858585;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .question-menu p {
+        font-size: 4vw;
+        letter-spacing: 0.15em;
+        color: #858585;
+        margin-left: 65px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .question-menu.active {
+        width: 90%;
+
+        padding-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #FFF;
+    }
+
+    .center {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50px;
+        margin-top: 25px;
+    }
+
+    .center:before,
+    .center:after,
+    .center div {
+        background: #FFD15C;
+        content: "";
+        display: block;
+        height: 6px;
+        border-radius: 3px;
+        margin: 7px 0;
+        transition: 0.5s;
+    }
+
+    .center.active:before {
+        transform: translateY(12px) rotate(135deg);
+    }
+
+    .center.active:after {
+        transform: translateY(-12px) rotate(-135deg);
+    }
+
+    .center.active div {
+        transform: scale(0);
+    }
+
+    .question-img {
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    .first-img {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    .first-img img {
+        width: 100%;
+    }
+
+    .first-img p {
+        font-size: 7vw;
+        color: #FFD15C;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .first-inp {
+        width: 100%;
+        margin-top: 10px;
+        padding-bottom: 10px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        padding-left: 60px;
+    }
+
+    .first-btn {
+        width: 100%;
+        margin-top: 10px;
+        padding-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+
+    }
+
+    .first-inp p {
+        font-size: 3vw;
+        letter-spacing: 0.1em;
+        color: #656464;
+    }
+
+    .first-inp input {
+        width: 90%;
+        padding-top: 10px;
+        border: 1px solid #553900;
+        border-radius: 5px;
+        font-size: 3vw;
+        padding-bottom: 10px;
+        padding-left: 10px;
+    }
+
+    .first-btn button {
+        width: 40%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: flex;
+        align-items: center;
+        font-size: 4vw;
+        justify-content: space-around;
+        color: #FFF;
+        background: #454CE3;
+        box-shadow: 0px 10px 15px rgba(69, 76, 227, 0.3);
+        border-radius: 5px;
+        border: none;
+    }
+}
+
+.reviews {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    color: #FFF;
-    background-color: #092C8F;
+    background-color: #E5E5E5;
+}
+
+.reviews-mini {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.reviews-img {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.reviews-p {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.reviews-p-about {
+    font-size: 1.7vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 0.05em;
+    color: #4F4F4F;
+}
+
+.reviews-p-name {
+    letter-spacing: 0.12em;
+    color: #FFD15C;
+    font-size: 2vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 25px;
+}
+
+.reviews-p-s {
+    font-size: 1.3vw;
+    color: #6D6D6D;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+@media(max-width:991px){
+    .reviews {
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #E5E5E5;
+    }
+    
+    .reviews-mini {
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    
+    .reviews-img {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .reviews-img img{
+        width: 70%;
+    }
+    
+    .reviews-p {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 30px;
+    }
+    
+    .reviews-p-about {
+        font-size: 2.5vw;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        letter-spacing: 0.05em;
+        color: #4F4F4F;
+    }
+    
+    .reviews-p-name {
+        letter-spacing: 0.12em;
+        color: #FFD15C;
+        font-size: 4vw;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin-top: 25px;
+    }
+    
+    .reviews-p-s {
+        font-size: 2.5vw;
+        color: #6D6D6D;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+}
+@media(max-width:991px){
+    .reviews {
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #E5E5E5;
+    }
+    
+    .reviews-mini {
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    
+    .reviews-img {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .reviews-img img{
+        width: 60%;
+    }
+    
+    .reviews-p {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 30px;
+    }
+    
+    .reviews-p-about {
+        font-size: 3.35vw;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        letter-spacing: 0.05em;
+        color: #4F4F4F;
+    }
+    
+    .reviews-p-name {
+        letter-spacing: 0.12em;
+        color: #FFD15C;
+        font-size: 5vw;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin-top: 25px;
+    }
+    
+    .reviews-p-s {
+        font-size: 3.5vw;
+        color: #6D6D6D;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
 }
