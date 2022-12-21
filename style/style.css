@@ -3164,6 +3164,9 @@
     padding-top: 40px;
     padding-bottom: 40px;
     background-image: url(../img/Group\ 14.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -3547,6 +3550,11 @@
     }
     
 }
+@media(max-width:500px){
+    .component-img img{
+        width: 100%;
+    }
+}
 .footer{
     width: 100%;
     padding-top: 10px;
@@ -3583,6 +3591,7 @@
 .footer-menu ul li a{
     text-decoration: none;
     color: #FFF;
+    font-size: 1.4vw;
 }
 .footer-kontakt{
     width: 100%;
@@ -3626,6 +3635,11 @@
     color: #FFF;
     letter-spacing: 0.12em;
 }
+.footer-menu ul li a{
+    text-decoration: none;
+    color: #FFF;
+    font-size: 2vw;
+}
 }
 @media(max-width:600px){
     .i-tel-footer{
@@ -3648,6 +3662,11 @@
     text-decoration: none;
     color: #FFF;
     letter-spacing: 0.12em;
+}
+.footer-menu ul li a{
+    text-decoration: none;
+    color: #FFF;
+    font-size: 3vw;
 }
 .footer-icon{
     width: 20%;
